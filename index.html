@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Room Booking Form</title>
+</head>
+<body>
+
+    <h1>Hotel Room Booking Form</h1>
+
+    <form action="#" method="POST">
+        
+        <!-- 1. Text Input Fields with Labels -->
+        <label for="fullName">Full Name:</label><br>
+        <input type="text" id="fullName" name="fullName" placeholder="John Doe" required><br><br>
+
+        <label for="email">Email Address:</label><br>
+        <input type="email" id="email" name="email" placeholder="example@mail.com" required><br><br>
+
+        <label for="phone">Phone Number:</label><br>
+        <input type="tel" id="phone" name="phone" placeholder="123-456-7890" required><br><br>
+
+        <!-- 2. Date Input Fields -->
+        <label for="checkin">Check-in Date:</label><br>
+        <input type="date" id="checkin" name="checkin" required><br><br>
+
+        <label for="checkout">Check-out Date:</label><br>
+        <input type="date" id="checkout" name="checkout" required><br><br>
+
+        <!-- 3. Select Dropdown Menu -->
+        <label for="roomType">Room Type:</label><br>
+        <select id="roomType" name="roomType" required>
+            <option value="">-- Please Select --</option>
+            <option value="single">Single Room</option>
+            <option value="double">Double Room</option>
+            <option value="suite">Luxury Suite</option>
+        </select><br><br>
+
+        <label for="guests">Number of Guests:</label><br>
+        <select id="guests" name="guests">
+            <option value="1">1 Guest</option>
+            <option value="2">2 Guests</option>
+            <option value="3">3 Guests</option>
+            <option value="4+">4+ Guests</option>
+        </select><br><br>
+
+        <!-- 4. Textarea Field -->
+        <label for="requests">Special Requests / Preferences:</label><br>
+        <textarea id="requests" name="requests" rows="4" cols="40" placeholder="Specify any dietary requirements, extra bed, ground floor preference, etc."></textarea><br><br>
+
+        <!-- 5. Buttons -->
+        <button type="submit">Book Now</button>
+        <button type="reset">Reset Form</button>
+
+    </form>
+
+</body>
+</html>
